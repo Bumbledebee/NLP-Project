@@ -20,12 +20,10 @@ The dataset used for this project contains labeled examples of real and fake new
 
 The Logistic Regression model demonstrated strong performance on the dataset, making it the optimal choice for this task. The balanced dataset and TF-IDF vectorization contributed significantly to the model's accuracy.
 
-## Future Work
-
-- Experiment with other NLP techniques, such as word embeddings (e.g., Word2Vec, GloVe).
-- Explore deep learning models like LSTMs or transformers for improved performance.
-- Expand the dataset to include more diverse examples of fake and real news.
 
 ## Conclusion
 
 This project successfully demonstrates the use of machine learning and NLP techniques to detect fake news. The Logistic Regression model, combined with TF-IDF vectorization, provides a reliable solution for this classification task.
+
+## Presentation
+The presentation can be found in the Presentation folder.
