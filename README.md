@@ -1,31 +1,31 @@
-![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
+# Fake News Detection Project
 
-# Natural Language Processing Challenge
+## Overview
 
-## Introduction
+This project aims to build a machine learning model capable of predicting whether a news snippet or headline is real or fake. By leveraging natural language processing (NLP) techniques and supervised learning, the model analyzes textual data to classify news snippets accurately.
 
-Learning how to process text is a skill required for Data Scientists. 
-In this project, you will put these skills into practice to identify whether a news headline is real or fake news.
+## Dataset
 
-## Project Overview
+The dataset used for this project contains labeled examples of real and fake news snippets. The data is balanced, ensuring an equal representation of both classes, which helps improve the model's performance and reduces bias.
 
-In the file `dataset/training_data.csv` you will find dataset containing news headlines and their tags: 
-0, if the headline is fake news, and, 1, if the headline is real news. 
+## Methodology
 
-Your goal is to build a classifier that is able to distinguish between the two.
+1. **Text Vectorization**:  
+    The text columns in the dataset were vectorized using **TF-IDF (Term Frequency-Inverse Document Frequency)**. This technique transforms the textual data into numerical features that can be fed into machine learning models.
 
-Once you have a classifier built, then use it to predict the labels for `dataset/testing_data.csv`. Generate a new file
-where the label `2` has been replaced by `0` (fake) or `1` (real) according to your model. Please respect the original file format, 
-do not include extra columns, and respect the column separator. 
+2. **Model Selection**:  
+    Several machine learning models were tested to determine the best-performing algorithm. After evaluation, **Logistic Regression** achieved the highest accuracy score and was selected as the final model.
 
+## Results
 
-## Guidance
-Like in a real life scenario, you are able to make your own choices and text treatment. 
-Use the techniques you have learned and the common packages to process this data and classify the text.
+The Logistic Regression model demonstrated strong performance on the dataset, making it the optimal choice for this task. The balanced dataset and TF-IDF vectorization contributed significantly to the model's accuracy.
 
-## Deliverables
+## Future Work
 
-1. **Python Code:** Provide well-documented Python code that conducts the analysis.
-2. **Predictions:** A csv file in the same format as `testing_data.csv` but with the predicted labels (0 or 1)
-3. **Accuracy estimation:** Provide the teacher with your estimation of how your model will perform.
-4. **Presentation:** You will present your model in a 10-minute presentation. Your teacher will provide further instructions.
+- Experiment with other NLP techniques, such as word embeddings (e.g., Word2Vec, GloVe).
+- Explore deep learning models like LSTMs or transformers for improved performance.
+- Expand the dataset to include more diverse examples of fake and real news.
+
+## Conclusion
+
+This project successfully demonstrates the use of machine learning and NLP techniques to detect fake news. The Logistic Regression model, combined with TF-IDF vectorization, provides a reliable solution for this classification task.
